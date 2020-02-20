@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    background-color: rgb(244,244,244);
+    border: 4px outset rgb(226, 226, 226);
+    color: rgb(40, 53, 69);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 922px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+
+main{
+    flex-basis: 67%;
+    order: 2;   
+}
+
+.header{
+    color: rgb(0, 118, 168);
+    font-size: 1.5em;
+    height: 15vh;
+    margin-top: 3vh;
+    display: flex;
+}
+
+.header>.radius{
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
+    margin-right: 3%;
+    border-radius: 200px;
+    background-color: rgb(0, 118, 168);
+    position: relative;
+}
+
+.radius>p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 2em;
+    transform: translate(0,-50%);
+    color: white;
+}
+
+.name{
+    margin-top: 5%;
+}
+
+h3.title{
+    color: rgb(0, 118, 168);
+    margin-bottom: 2%;
+}
+
+.title{
+    font-size: 1.25em;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: rgb(0, 118, 168);
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
+
+.text{
+    display: inline-block;
+}
+
+.experience{
+    display: flex;
+}
+
+.date{
+    width: 15%;
+    margin-top: 2%;
+}
+
+.content{
+    flex-basis: 100%;
+}
+
+.hobby>.content{
+    margin-left: 13%;
+}
+
+aside{
+    flex-basis: 30%;
+    margin-top: 5vh;
+}
+
+.side{
+    margin-left: 13%;
+}
+
+.fa-lg{
+    font-size: 0.7em;
+    color: rgb(244,244,244);
+    margin-bottom: 3%;
+}
+
+.fa-circle{
+    color:  rgb(0, 118, 168);
+}
+
+.adress{
+    margin-top: 4%;
+}
+
+.first{
+    margin-top: 5%;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    background-color: rgb(0, 118, 168);
+    display: inline-block;
+}
+
+.scala{
+    margin-left: 50%;
+}
+
+#blank{
+    background-color: rgb(210,211,213);
+}
+
+footer{
+    margin-top: 5%;
+    order: 4;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75em;
+}
+
+@media (max-width:420px) and (orientation: portrait){
+    aside{
+        flex-basis: auto;
+        order: 2;
+        margin-top: auto;
+    }
+
+    .name{
+        font-size: 0.6em;
+    }
+
+    .header{
+        font-size: 1em;
+    }
+
+    .title{
+        margin-top: 5%;
+    }
+
+    .experience{
+        display: block;
+    }
+
+    .date{
+        display: flex;
+        width: auto;
+    }
+
+    .side{
+        margin-left: auto;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width:421px) and (max-width:938px) and (orientation: portrait){
+    aside{
+        flex-basis: auto;
+        margin-left: 3%;
+        order: 2;
+    }
+
+    .experience{
+        display: block;
+    }
+
+    .date{
+        display: flex;
+        width: auto;
+    }
+
+    .side{
+        margin-left: auto;
+    }
+
+    .hobby>.content{
+        margin-left: auto;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+
+    header{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:650px) and (max-width: 1020px) and (orientation: landscape){
+    .header{
+        height: auto;
+        font-size: 1.2em;
+    }
+
+    main{
+        flex-basis: 60%;
+        margin-left: auto;
+    }
+
+    aside{
+        flex-basis: 40%;
+    }
+
+    .experience{
+        display: block;
+    }
+
+    .date{
+        display: flex;
+        width: auto;
+    }
+
+    .hobby>.content{
+        margin-left: auto;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+}
+@media (min-width:560px) and (max-width:580px) and (orientation: landscape){
+    .header{
+        height: auto;
+        font-size: 1.2em;
+    }
+
+    main{
+        flex-basis: 60%;
+        margin-left: auto;
+    }
+
+    aside{
+        flex-basis: 40%;
+    }
+
+    .experience{
+        display: block;
+    }
+
+    .date{
+        display: flex;
+        width: auto;
+    }
+
+    .hobby>.content{
+        margin-left: auto;
+    }
+
+    footer{
+        font-size: 0.5em;
+    }
+
+    .side{
+        margin-left: 2%;
+    }
+}
